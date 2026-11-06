@@ -1,2 +1,2 @@
-# DziennaMotywacja
+# Codzienna Motywacja
 Motywacja codziennie
