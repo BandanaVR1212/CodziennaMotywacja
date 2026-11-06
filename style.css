@@ -1,0 +1,90 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  text-align: center;
+  padding: 2.5rem 1rem 0;
+}
+
+h1 {
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+#date {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: #888;
+  letter-spacing: 0.1em;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+
+blockquote {
+  max-width: 880px;
+  text-align: center;
+}
+
+#quote {
+  font-size: clamp(1.5rem, 4.2vw, 2.7rem);
+  line-height: 1.4;
+  font-style: italic;
+}
+
+#quote::before { content: "„"; }
+#quote::after  { content: "”"; }
+
+#author {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+#author::before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 1px;
+  background: #fff;
+  margin: 0 auto 1.2rem;
+}
+
+.timer {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  border-top: 1px solid #333;
+  font-size: 0.85rem;
+  color: #aaa;
+  letter-spacing: 0.08em;
+}
+
+.timer strong {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.15em;
+}
